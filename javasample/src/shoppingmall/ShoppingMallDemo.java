@@ -7,9 +7,6 @@ public class ShoppingMallDemo {
 		Shopping s;
 		s=new Clothes();
 		s.purchase();
-		
-		
-
 	}
 
 }
