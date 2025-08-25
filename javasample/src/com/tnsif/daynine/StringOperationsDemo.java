@@ -1,33 +1,27 @@
 //Program to demonstrate string comparison using ==, equals() and compareTo() methods
+//Program to demonstrate various String class Methods
 package com.tnsif.daynine;
 
-public class StringComparision {
-
+public class StringOperationsDemo {
 	public static void main(String[] args) {
+		String s1 = new String("  Indian  ");
+		String s2 = s1.toUpperCase();
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s1.length());
+		System.out.println(s1.substring(2, 5));
+		System.out.println(s2.substring(2));
+		System.out.println(s1.trim());
+		System.out.println(s1.strip());
+		System.out.println(s1.stripTrailing());
+		System.out.println(s1.isEmpty());
+	
+		// String Comparison
+		s1 = "Good Morning";
+		s2 = new String(s1);
 
-		// creating strings using Literals
-		String s1 = "TNSIF";
-		String s2 = "TNSIF";
+		System.out.println(s1 + " equals " + s2 + " -> " + s1.equals(s2));
+		System.out.println(s1 + " == " + s2 + " -> " + (s1 == s2));
 
-		// creating strings using new operator
-		String s3 = new String("TNSIF");
-		String s4 = new String("TNSIF");
-
-		//== and equals
-		System.out.println("s1 == s2 :" + (s1 == s2) + "\ts1 equals s2" + s1.equals(s2));
-		System.out.println("s1 == s3 :" + (s1 == s3) + "\ts1 equals s3" + s1.equals(s3));
-		System.out.println("s4 == s3 :" + (s4 == s3) + "\ts4 equals s3" + s4.equals(s3));
-
-		System.out.println(s1.hashCode());
-		System.out.println(s2.hashCode());
-
-		System.out.println(s3.hashCode());
-		System.out.println(s4.hashCode());
-
-		//compareTo 
-		System.out.println(s1.compareTo("tnsif"));
-		System.out.println(s1.compareToIgnoreCase("tnsif"));
-		System.out.println(s1.compareTo(s2));
 	}
-
 }
